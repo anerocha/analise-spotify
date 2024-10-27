@@ -35,15 +35,3 @@ As principais visualizações incluem:
 - Histogramas de popularidade
 - Gráficos de dispersão para análise de dançabilidade e energia vs. popularidade
 
-### Exemplo de Código
-
-#### Carregar e Limpar Dados:
-```python
-import pandas as pd
-
-# Carregar o arquivo CSV
-spotify_data = pd.read_csv('universal_top_spotify_songs.csv')
-
-# Limpeza dos dados
-spotify_data.drop_duplicates(inplace=True)
-spotify_data.dropna(inplace=True)
